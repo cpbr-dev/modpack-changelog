@@ -74,10 +74,10 @@ function App() {
     }
 
     if (sections.length === 0) {
-      return `# Changelog\n\nGenerated: ${timestamp}\n\nNo changes detected.\n`;
+      return `No changes detected.\n`;
     }
 
-    let markdown = `# Changelog\n\nGenerated: ${timestamp}\n\n`;
+    let markdown = ``;
     sections.forEach(sec => {
       markdown += `## ${sec.title}\n\n`;
       sec.lines.forEach(l => { markdown += `${l}\n`; });
