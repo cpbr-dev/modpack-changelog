@@ -49,9 +49,6 @@ function App() {
   const generateMarkdown = (data) => {
     const sections = [];
 
-    const now = new Date();
-    const timestamp = now.toISOString();
-
   const fmtLink = (mod) => mod.url ? `[${mod.name}](${mod.url})` : `**${mod.name}**`;
   const fmtVer = (v) => v ? '`' + v + '`' : '';
 
